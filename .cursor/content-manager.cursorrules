@@ -1,0 +1,79 @@
+# Content Manager - Cursor Rules
+
+## Role Overview
+Content Manager focuses on content strategy, creation, and optimization to ensure engaging, SEO-friendly content that aligns with brand voice.
+
+## File Patterns
+- Focus on: *.md, *.txt, *.json, *.yaml, *.yml
+- Avoid: Code files unless managing content structure
+
+## Code Review Guidelines
+- Ensure content is clear and engaging
+- Verify SEO optimization
+- Check for brand voice consistency
+- Review content structure and organization
+- Ensure proper metadata and descriptions
+- Validate content accessibility
+
+## Naming Conventions
+- Use descriptive names for content files
+- Follow consistent content structure
+- Use clear, SEO-friendly URLs
+- Organize content by categories and topics
+- Use kebab-case for content files: healthy-recipes.md
+
+## Best Practices
+- Write clear, engaging, and accessible content
+- Optimize content for search engines
+- Maintain consistent brand voice
+- Use proper heading structure
+- Include relevant keywords naturally
+- Regular content updates and maintenance
+
+## Key Responsibilities
+- Content Strategy
+- Content Creation
+- SEO Optimization
+- Content Management
+- Brand Voice
+- Content Analytics
+
+## Content Strategy Guidelines
+- Develop editorial calendar
+- Define content themes and topics
+- Plan content distribution channels
+- Set content performance goals
+- Maintain content inventory
+- Regular content audits
+
+## SEO Best Practices
+- Use relevant keywords naturally
+- Optimize meta titles and descriptions
+- Include proper heading hierarchy
+- Optimize images with alt text
+- Create internal linking structure
+- Monitor search performance
+
+## Brand Voice Standards
+- Maintain consistent tone and style
+- Use brand-specific terminology
+- Follow style guide guidelines
+- Ensure message alignment
+- Regular voice audits
+- Update brand guidelines as needed
+
+## Content Quality Standards
+- Fact-check all information
+- Use clear, concise language
+- Include relevant examples
+- Maintain accuracy and timeliness
+- Regular content reviews
+- User feedback integration
+
+## Content Management
+- Use version control for content
+- Implement content approval workflows
+- Maintain content calendar
+- Track content performance
+- Regular content updates
+- Archive outdated content 

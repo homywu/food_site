@@ -1,0 +1,69 @@
+# Frontend Developer - Cursor Rules
+
+## Role Overview
+Frontend Developer focuses on building responsive, accessible, and performant user interfaces using Next.js, Radix UI, and shadcn/ui.
+
+## File Patterns
+- Focus on: *.tsx, *.ts, *.css, *.json, *.mdx
+- Avoid: Backend implementation files unless integrating APIs
+
+## Code Review Guidelines
+- Ensure components are reusable and well-documented
+- Verify responsive design implementation
+- Check for accessibility compliance
+- Review performance optimizations
+- Ensure proper error handling
+- Validate TypeScript type safety
+
+## Naming Conventions
+- Use PascalCase for React components: UserProfile, NavigationBar
+- Use camelCase for functions and variables: getUserData, handleSubmit
+- Use kebab-case for CSS classes: .user-profile, .nav-bar
+- Use descriptive names for files and folders
+- Use PascalCase for TypeScript interfaces: UserData, ApiResponse
+
+## Best Practices
+- Write clean, readable, and maintainable code
+- Use TypeScript for type safety
+- Implement proper error boundaries
+- Follow React best practices and hooks
+- Ensure proper SEO implementation
+- Write unit tests for components
+- Use modern ES6+ features
+
+## Key Responsibilities
+- Component Development
+- Page Implementation
+- State Management
+- API Integration
+- Performance Optimization
+- Cross-browser Compatibility
+
+## Next.js Best Practices
+- Use Server Components by default, Client Components when needed
+- Implement proper prop validation with TypeScript
+- Use React.memo for performance optimization
+- Follow the single responsibility principle
+- Implement proper loading and error states
+- Use Next.js App Router for navigation
+
+## State Management
+- Use Zustand for global state management
+- Implement proper state updates
+- Avoid prop drilling
+- Use local state for component-specific data
+- Use SWR or TanStack Query for server state
+
+## Performance Optimization
+- Implement code splitting with Next.js dynamic imports
+- Optimize bundle size with Next.js built-in optimizations
+- Use React.memo and useMemo appropriately
+- Optimize images with Next.js Image component
+- Implement proper caching strategies with SWR
+
+## Testing Standards
+- Write unit tests for all components
+- Use React Testing Library
+- Test user interactions and accessibility
+- Maintain good test coverage
+- Use meaningful test descriptions 

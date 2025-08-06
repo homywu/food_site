@@ -1,0 +1,442 @@
+# Restaurant Showcase & Ordering Portal - Cursor Rules
+
+## Project Overview
+
+This file contains cursor rules for all roles involved in the restaurant showcase and ordering portal project. These rules guide development practices, code review standards, and collaboration across the entire team.
+
+**Note**: This project now uses a modular cursor rules structure. Role-specific rules are located in the `.cursor/` directory. See `.cursor/main.cursorrules` for the complete structure and usage instructions.
+
+## General Project Rules
+
+### File Organization
+
+- Use clear, descriptive names for all files and directories
+- Follow consistent naming conventions across the project
+- Organize files by feature or component
+- Maintain proper directory structure
+
+### Documentation
+
+- All code should be well-documented
+- Include README files for major components
+- Document API endpoints and data models
+- Maintain up-to-date project documentation
+
+### Version Control
+
+- Use clear, descriptive commit messages
+- Follow conventional commit format
+- Create feature branches for new development
+- Require code reviews before merging
+
+## Role-Specific Rules
+
+### 1. Project Manager (PM)
+
+#### File Patterns
+
+- Focus on: *.md,*.txt, *.json,*.yaml, *.yml
+- Avoid: *.js,*.ts, *.css,*.html (unless reviewing documentation)
+
+#### Code Review Guidelines
+
+- Review project documentation for clarity and completeness
+- Ensure requirements are properly documented
+- Verify that project structure follows established conventions
+- Check that README files are comprehensive and up-to-date
+
+#### Naming Conventions
+
+- Use descriptive names for project files and directories
+- Follow kebab-case for file names: project-plan.md, requirements.md
+- Use clear, professional language in documentation
+
+#### Best Practices
+
+- Always include project context in documentation
+- Maintain consistent formatting across all project documents
+- Include version numbers and dates in important documents
+- Create clear task breakdowns and acceptance criteria
+
+### 2. Product Owner (PO)
+
+#### File Patterns
+
+- Focus on: *.md,*.json, *.yaml,*.yml, *.txt
+- Avoid: Implementation files unless reviewing requirements
+
+#### Code Review Guidelines
+
+- Ensure user stories are clear and actionable
+- Verify acceptance criteria are testable
+- Check that requirements align with business objectives
+- Review feature specifications for completeness
+
+#### Naming Conventions
+
+- Use descriptive names: user-stories.md, requirements.md
+- Follow consistent formatting for user stories
+- Use clear, user-focused language
+
+#### Best Practices
+
+- Write user stories from user perspective
+- Include acceptance criteria for each story
+- Maintain traceability between requirements and features
+- Document business rules and constraints clearly
+
+### 3. UX/UI Designer
+
+#### File Patterns
+
+- Focus on: *.fig,*.sketch, *.xd,*.ai, *.psd,*.svg, *.png,*.jpg, *.css,*.scss
+- Avoid: Backend implementation files
+
+#### Code Review Guidelines
+
+- Ensure CSS follows design system guidelines
+- Verify responsive design implementation
+- Check accessibility compliance in CSS
+- Review component consistency across pages
+
+#### Naming Conventions
+
+- Use semantic class names: .header, .navigation, .button-primary
+- Follow BEM methodology for CSS classes
+- Use descriptive names for design assets
+- Organize files by component or page
+
+#### Best Practices
+
+- Maintain consistent spacing and typography
+- Use CSS custom properties for theming
+- Ensure mobile-first responsive design
+- Follow accessibility guidelines (WCAG 2.1)
+- Document design decisions and rationale
+
+### 4. Frontend Developer
+
+#### File Patterns
+
+- Focus on: *.js,*.jsx, *.ts,*.tsx, *.html,*.css, *.scss,*.json
+- Avoid: Backend implementation files unless integrating APIs
+
+#### Code Review Guidelines
+
+- Ensure components are reusable and well-documented
+- Verify responsive design implementation
+- Check for accessibility compliance
+- Review performance optimizations
+- Ensure proper error handling
+
+#### Naming Conventions
+
+- Use PascalCase for React components: UserProfile, NavigationBar
+- Use camelCase for functions and variables: getUserData, handleSubmit
+- Use kebab-case for CSS classes: .user-profile, .nav-bar
+- Use descriptive names for files and folders
+
+#### Best Practices
+
+- Write clean, readable, and maintainable code
+- Use TypeScript for type safety
+- Implement proper error boundaries
+- Follow React best practices and hooks
+- Ensure proper SEO implementation
+- Write unit tests for components
+
+### 5. Backend Developer
+
+#### File Patterns
+
+- Focus on: *.js,*.ts, *.json,*.sql, *.yaml,*.yml
+- Avoid: Frontend files unless integrating with APIs
+
+#### Code Review Guidelines
+
+- Ensure proper error handling and logging
+- Verify API security and authentication
+- Check database query optimization
+- Review input validation and sanitization
+- Ensure proper API documentation
+
+#### Naming Conventions
+
+- Use camelCase for functions and variables: getUserById, createOrder
+- Use PascalCase for classes: UserService, OrderController
+- Use snake_case for database tables and columns
+- Use descriptive names for API endpoints
+
+#### Best Practices
+
+- Write clean, testable, and maintainable code
+- Implement proper logging and monitoring
+- Use environment variables for configuration
+- Follow RESTful API design principles
+- Write comprehensive unit and integration tests
+- Document API endpoints and data models
+
+### 6. DevOps Engineer
+
+#### File Patterns
+
+- Focus on: *.yaml,*.yml, *.json,*.sh, *.tf,*.dockerfile, *.md
+- Avoid: Application code unless configuring deployment
+
+#### Code Review Guidelines
+
+- Ensure infrastructure as code follows best practices
+- Verify security configurations
+- Check for proper resource allocation
+- Review monitoring and alerting setup
+- Ensure disaster recovery procedures
+
+#### Naming Conventions
+
+- Use kebab-case for infrastructure resources: web-server, database-cluster
+- Use descriptive names for services and components
+- Follow consistent tagging conventions
+- Use clear, descriptive names for scripts
+
+#### Best Practices
+
+- Use infrastructure as code (IaC) principles
+- Implement proper security measures
+- Set up comprehensive monitoring
+- Follow the principle of least privilege
+- Document all infrastructure decisions
+- Implement automated testing for infrastructure
+
+### 7. QA Engineer
+
+#### File Patterns
+
+- Focus on: *.js,*.ts, *.json,*.md, *.yaml,*.yml
+- Avoid: Production code unless writing tests
+
+#### Code Review Guidelines
+
+- Ensure test coverage is comprehensive
+- Verify test data is properly managed
+- Check for proper test isolation
+- Review test naming and organization
+- Ensure tests are maintainable and readable
+
+#### Naming Conventions
+
+- Use descriptive test names: shouldDisplayUserProfileWhenLoggedIn
+- Use clear, descriptive names for test files
+- Follow consistent test structure
+- Use meaningful test data names
+
+#### Best Practices
+
+- Write clear, maintainable test code
+- Use proper test isolation and cleanup
+- Implement comprehensive test coverage
+- Follow testing best practices (AAA pattern)
+- Document test scenarios and edge cases
+- Maintain test data and fixtures properly
+
+### 8. Content Manager
+
+#### File Patterns
+
+- Focus on: *.md,*.txt, *.json,*.yaml, *.yml
+- Avoid: Code files unless managing content structure
+
+#### Code Review Guidelines
+
+- Ensure content is clear and engaging
+- Verify SEO optimization
+- Check for brand voice consistency
+- Review content structure and organization
+- Ensure proper metadata and descriptions
+
+#### Naming Conventions
+
+- Use descriptive names for content files
+- Follow consistent content structure
+- Use clear, SEO-friendly URLs
+- Organize content by categories and topics
+
+#### Best Practices
+
+- Write clear, engaging, and accessible content
+- Optimize content for search engines
+- Maintain consistent brand voice
+- Use proper heading structure
+- Include relevant keywords naturally
+- Regular content updates and maintenance
+
+### 9. Data Analyst
+
+#### File Patterns
+
+- Focus on: *.sql,*.py, *.r,*.json, *.csv,*.md, *.ipynb
+- Avoid: Application code unless implementing analytics
+
+#### Code Review Guidelines
+
+- Ensure data queries are optimized
+- Verify data accuracy and integrity
+- Check for proper data handling
+- Review analysis methodology
+- Ensure reproducible results
+
+#### Naming Conventions
+
+- Use descriptive names for queries and analyses
+- Follow consistent naming for metrics and dimensions
+- Use clear, descriptive names for reports
+- Organize analyses by topic or business area
+
+#### Best Practices
+
+- Write clear, documented analysis code
+- Ensure data privacy and security
+- Use version control for analysis code
+- Document data sources and transformations
+- Create reproducible analyses
+- Validate results and assumptions
+
+### 10. Security Specialist
+
+#### File Patterns
+
+- Focus on: *.yaml,*.yml, *.json,*.md, *.sh,*.conf
+- Avoid: Application code unless reviewing security
+
+#### Code Review Guidelines
+
+- Ensure proper authentication and authorization
+- Verify input validation and sanitization
+- Check for secure configuration
+- Review encryption and data protection
+- Ensure compliance with security standards
+
+#### Naming Conventions
+
+- Use descriptive names for security configurations
+- Follow consistent naming for security policies
+- Use clear, descriptive names for security tools
+- Organize security documentation by category
+
+#### Best Practices
+
+- Follow security best practices and standards
+- Implement defense in depth
+- Regular security assessments and updates
+- Document security policies and procedures
+- Maintain security monitoring and alerting
+- Ensure proper access controls and permissions
+
+## Cross-Role Collaboration Rules
+
+### Communication
+
+- Use clear, professional language in all communications
+- Document decisions and changes in appropriate files
+- Regular status updates and progress tracking
+- Share knowledge and best practices across roles
+
+### Code Reviews
+
+- All code changes require review by appropriate team members
+- Provide constructive feedback and suggestions
+- Ensure code follows established conventions
+- Verify that changes meet requirements and standards
+
+### Quality Assurance
+
+- Each role is responsible for quality within their domain
+- Cross-functional testing and validation
+- Regular feedback loops between roles
+- Continuous improvement processes
+
+### Documentation
+
+- Maintain up-to-date documentation for all components
+- Include setup instructions and configuration details
+- Document API endpoints and data models
+- Keep README files comprehensive and current
+
+## Technology Stack Guidelines
+
+### Frontend
+
+- React with TypeScript
+- CSS/SCSS with design system
+- Responsive design principles
+- Accessibility compliance
+
+### Backend
+
+- Node.js with TypeScript
+- RESTful API design
+- Database optimization
+- Security best practices
+
+### DevOps
+
+- Infrastructure as Code
+- CI/CD pipelines
+- Monitoring and logging
+- Security and compliance
+
+### Testing
+
+- Unit tests for all components
+- Integration tests for APIs
+- End-to-end testing
+- Performance testing
+
+## Security and Compliance
+
+### Data Protection
+
+- Encrypt sensitive data at rest and in transit
+- Implement proper authentication and authorization
+- Follow data privacy regulations
+- Regular security audits and updates
+
+### Access Control
+
+- Principle of least privilege
+- Regular access reviews
+- Secure credential management
+- Audit logging for all actions
+
+## Performance and Optimization
+
+### Frontend Performance
+
+- Optimize bundle sizes
+- Implement lazy loading
+- Use CDN for static assets
+- Monitor Core Web Vitals
+
+### Backend Performance
+
+- Optimize database queries
+- Implement caching strategies
+- Monitor API response times
+- Scale infrastructure as needed
+
+## Monitoring and Maintenance
+
+### Application Monitoring
+
+- Real-time performance monitoring
+- Error tracking and alerting
+- User experience metrics
+- Business metrics tracking
+
+### Infrastructure Monitoring
+
+- Server and service health
+- Resource utilization
+- Security event monitoring
+- Backup and recovery testing
+
+This comprehensive set of cursor rules ensures consistent development practices across all roles while maintaining high quality standards and effective collaboration throughout the food website project.

@@ -1,0 +1,78 @@
+# DevOps Engineer - Cursor Rules
+
+## Role Overview
+DevOps Engineer focuses on infrastructure management, CI/CD pipelines, and ensuring reliable, scalable deployment processes.
+
+## File Patterns
+- Focus on: *.yaml, *.yml, *.json, *.sh, *.tf, *.dockerfile, *.md
+- Avoid: Application code unless configuring deployment
+
+## Code Review Guidelines
+- Ensure infrastructure as code follows best practices
+- Verify security configurations
+- Check for proper resource allocation
+- Review monitoring and alerting setup
+- Ensure disaster recovery procedures
+- Validate environment consistency
+
+## Naming Conventions
+- Use kebab-case for infrastructure resources: web-server, database-cluster
+- Use descriptive names for services and components
+- Follow consistent tagging conventions
+- Use clear, descriptive names for scripts
+- Use environment-specific naming: prod-web-server, staging-db
+
+## Best Practices
+- Use infrastructure as code (IaC) principles
+- Implement proper security measures
+- Set up comprehensive monitoring
+- Follow the principle of least privilege
+- Document all infrastructure decisions
+- Implement automated testing for infrastructure
+
+## Key Responsibilities
+- Infrastructure Management
+- CI/CD Pipeline
+- Monitoring & Logging
+- Security
+- Performance Optimization
+- Disaster Recovery
+
+## Infrastructure as Code
+- Use Terraform for cloud infrastructure
+- Implement version control for all configurations
+- Use modules for reusable components
+- Implement proper state management
+- Document all infrastructure changes
+
+## CI/CD Pipeline Standards
+- Automated testing at all stages
+- Security scanning in pipeline
+- Environment promotion strategy
+- Rollback procedures
+- Deployment notifications
+- Performance monitoring integration
+
+## Security Best Practices
+- Implement least privilege access
+- Use secrets management
+- Regular security audits
+- Network segmentation
+- Encryption at rest and in transit
+- Regular vulnerability scanning
+
+## Monitoring and Alerting
+- Set up comprehensive logging
+- Implement health checks
+- Configure meaningful alerts
+- Monitor resource utilization
+- Track application performance
+- Implement log aggregation
+
+## Disaster Recovery
+- Regular backup testing
+- Document recovery procedures
+- Implement automated recovery
+- Test failover scenarios
+- Maintain recovery documentation
+- Regular disaster recovery drills 

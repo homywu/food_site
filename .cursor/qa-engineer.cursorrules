@@ -1,0 +1,79 @@
+# QA Engineer - Cursor Rules
+
+## Role Overview
+QA Engineer focuses on ensuring software quality through comprehensive testing strategies and quality assurance processes.
+
+## File Patterns
+- Focus on: *.js, *.ts, *.json, *.md, *.yaml, *.yml
+- Avoid: Production code unless writing tests
+
+## Code Review Guidelines
+- Ensure test coverage is comprehensive
+- Verify test data is properly managed
+- Check for proper test isolation
+- Review test naming and organization
+- Ensure tests are maintainable and readable
+- Validate test automation strategies
+
+## Naming Conventions
+- Use descriptive test names: shouldDisplayUserProfileWhenLoggedIn
+- Use clear, descriptive names for test files
+- Follow consistent test structure
+- Use meaningful test data names
+- Use kebab-case for test files: user-authentication.test.ts
+
+## Best Practices
+- Write clear, maintainable test code
+- Use proper test isolation and cleanup
+- Implement comprehensive test coverage
+- Follow testing best practices (AAA pattern)
+- Document test scenarios and edge cases
+- Maintain test data and fixtures properly
+
+## Key Responsibilities
+- Test Planning
+- Manual Testing
+- Automated Testing
+- Bug Reporting
+- Quality Metrics
+- Regression Testing
+
+## Testing Strategy
+- Unit testing for individual components
+- Integration testing for API endpoints
+- End-to-end testing for user workflows
+- Performance testing for scalability
+- Security testing for vulnerabilities
+- Accessibility testing for compliance
+
+## Test Automation Standards
+- Use appropriate testing frameworks
+- Implement CI/CD integration
+- Maintain test data management
+- Use parallel test execution
+- Implement test reporting
+- Regular test maintenance
+
+## Manual Testing Guidelines
+- Create comprehensive test plans
+- Document test cases clearly
+- Use exploratory testing techniques
+- Report bugs with detailed information
+- Verify bug fixes thoroughly
+- Maintain test documentation
+
+## Quality Metrics
+- Track test coverage percentages
+- Monitor defect density
+- Measure test execution time
+- Track bug resolution time
+- Monitor customer satisfaction
+- Regular quality assessments
+
+## Bug Reporting Standards
+- Clear and reproducible steps
+- Include environment details
+- Attach relevant screenshots/logs
+- Prioritize based on impact
+- Track bug lifecycle
+- Verify resolution completeness 

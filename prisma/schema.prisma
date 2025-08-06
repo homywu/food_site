@@ -1,0 +1,276 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Users and Authentication
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String?
+  name      String?
+  role      UserRole @default(CUSTOMER)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  customerProfile CustomerProfile?
+  orders         Order[]
+  reviews        Review[]
+  loyaltyTransactions LoyaltyTransaction[]
+
+  @@map("users")
+}
+
+enum UserRole {
+  ADMIN
+  STAFF
+  CUSTOMER
+}
+
+// Menu Management
+model MenuItem {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  price       Decimal
+  imageUrl    String?
+  isAvailable Boolean  @default(true)
+  categoryId  String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  category   MenuCategory @relation(fields: [categoryId], references: [id])
+  options    MenuItemOption[]
+  ingredients MenuItemIngredient[]
+  orderItems OrderItem[]
+
+  @@map("menu_items")
+}
+
+model MenuCategory {
+  id           String   @id @default(cuid())
+  name         String
+  description  String?
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  items MenuItem[]
+
+  @@map("menu_categories")
+}
+
+model MenuItemOption {
+  id              String   @id @default(cuid())
+  menuItemId      String
+  optionName      String
+  priceAdjustment Decimal  @default(0)
+  isAvailable     Boolean  @default(true)
+
+  // Relations
+  menuItem MenuItem @relation(fields: [menuItemId], references: [id])
+
+  @@map("menu_item_options")
+}
+
+model MenuItemIngredient {
+  id         String   @id @default(cuid())
+  menuItemId String
+  ingredientId String
+  quantity   Decimal
+  unit       String
+
+  // Relations
+  menuItem   MenuItem   @relation(fields: [menuItemId], references: [id])
+  ingredient Ingredient @relation(fields: [ingredientId], references: [id])
+
+  @@map("menu_item_ingredients")
+}
+
+model Ingredient {
+  id       String @id @default(cuid())
+  name     String
+  quantity Decimal
+  unit     String
+  reorderLevel Decimal
+  supplierInfo String?
+
+  // Relations
+  menuItems MenuItemIngredient[]
+
+  @@map("ingredients")
+}
+
+// Order Management
+model Order {
+  id          String      @id @default(cuid())
+  userId      String
+  totalAmount Decimal
+  status      OrderStatus @default(PENDING)
+  orderType   OrderType   @default(DINE_IN)
+  specialInstructions String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  // Relations
+  user        User        @relation(fields: [userId], references: [id])
+  items       OrderItem[]
+  statusHistory OrderStatusHistory[]
+  kitchenOrder KitchenOrder?
+
+  @@map("orders")
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  PREPARING
+  READY
+  DELIVERED
+  CANCELLED
+}
+
+enum OrderType {
+  DINE_IN
+  TAKEAWAY
+  DELIVERY
+}
+
+model OrderItem {
+  id                String   @id @default(cuid())
+  orderId           String
+  menuItemId        String
+  quantity          Int
+  unitPrice         Decimal
+  specialInstructions String?
+  createdAt         DateTime @default(now())
+
+  // Relations
+  order   Order    @relation(fields: [orderId], references: [id])
+  menuItem MenuItem @relation(fields: [menuItemId], references: [id])
+
+  @@map("order_items")
+}
+
+model OrderStatusHistory {
+  id        String   @id @default(cuid())
+  orderId   String
+  status    OrderStatus
+  timestamp DateTime @default(now())
+  notes     String?
+
+  // Relations
+  order Order @relation(fields: [orderId], references: [id])
+
+  @@map("order_status_history")
+}
+
+// Restaurant Management
+model Staff {
+  id        String   @id @default(cuid())
+  name      String
+  role      StaffRole
+  email     String   @unique
+  phone     String?
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  // Relations
+  kitchenOrders KitchenOrder[]
+
+  @@map("staff")
+}
+
+enum StaffRole {
+  CHEF
+  SERVER
+  MANAGER
+  CASHIER
+}
+
+model KitchenOrder {
+  id          String   @id @default(cuid())
+  orderId     String   @unique
+  status      KitchenOrderStatus @default(PENDING)
+  assignedTo  String?
+  createdAt   DateTime @default(now())
+  completedAt DateTime?
+
+  // Relations
+  order     Order  @relation(fields: [orderId], references: [id])
+  staff     Staff? @relation(fields: [assignedTo], references: [id])
+
+  @@map("kitchen_orders")
+}
+
+enum KitchenOrderStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+// Customer Management
+model CustomerProfile {
+  id            String   @id @default(cuid())
+  userId        String   @unique
+  phone         String?
+  address       String?
+  loyaltyPoints Int      @default(0)
+  dietaryRestrictions String[]
+  favoriteItems String[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relations
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("customer_profiles")
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  userId    String
+  orderId   String
+  rating    Int
+  comment   String?
+  createdAt DateTime @default(now())
+
+  // Relations
+  user  User  @relation(fields: [userId], references: [id])
+  order Order @relation(fields: [orderId], references: [id])
+
+  @@map("reviews")
+}
+
+model LoyaltyTransaction {
+  id              String              @id @default(cuid())
+  userId          String
+  pointsEarned    Int                 @default(0)
+  pointsRedeemed  Int                 @default(0)
+  transactionType LoyaltyTransactionType
+  description     String?
+  createdAt       DateTime            @default(now())
+
+  // Relations
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("loyalty_transactions")
+}
+
+enum LoyaltyTransactionType {
+  EARN
+  REDEEM
+  EXPIRY
+  ADJUSTMENT
+} 

@@ -1,0 +1,87 @@
+# Security Specialist - Cursor Rules
+
+## Role Overview
+Security Specialist focuses on ensuring application security, compliance, and implementing security best practices across all systems.
+
+## File Patterns
+- Focus on: *.yaml, *.yml, *.json, *.md, *.sh, *.conf
+- Avoid: Application code unless reviewing security
+
+## Code Review Guidelines
+- Ensure proper authentication and authorization
+- Verify input validation and sanitization
+- Check for secure configuration
+- Review encryption and data protection
+- Ensure compliance with security standards
+- Validate security implementation
+
+## Naming Conventions
+- Use descriptive names for security configurations
+- Follow consistent naming for security policies
+- Use clear, descriptive names for security tools
+- Organize security documentation by category
+- Use kebab-case for security files: ssl-config.yaml
+
+## Best Practices
+- Follow security best practices and standards
+- Implement defense in depth
+- Regular security assessments and updates
+- Document security policies and procedures
+- Maintain security monitoring and alerting
+- Ensure proper access controls and permissions
+
+## Key Responsibilities
+- Security Assessment
+- Vulnerability Management
+- Security Monitoring
+- Compliance
+- Security Training
+- Incident Response
+
+## Security Assessment Standards
+- Regular penetration testing
+- Code security reviews
+- Infrastructure security audits
+- Third-party security assessments
+- Compliance audits
+- Security architecture reviews
+
+## Vulnerability Management
+- Regular vulnerability scanning
+- Patch management procedures
+- Security update tracking
+- Risk assessment and prioritization
+- Remediation planning
+- Security incident response
+
+## Security Monitoring
+- Real-time threat detection
+- Security event correlation
+- Anomaly detection
+- Log analysis and monitoring
+- Security metrics tracking
+- Incident response procedures
+
+## Compliance Standards
+- GDPR compliance
+- PCI DSS compliance
+- SOC 2 compliance
+- Industry-specific regulations
+- Regular compliance audits
+- Documentation maintenance
+
+## Security Training
+- Security awareness programs
+- Developer security training
+- Incident response training
+- Security policy training
+- Regular security updates
+- Security best practices education
+
+## Incident Response
+- Security incident procedures
+- Communication protocols
+- Evidence preservation
+- Recovery procedures
+- Post-incident analysis
+- Lessons learned documentation 

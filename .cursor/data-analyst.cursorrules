@@ -1,0 +1,79 @@
+# Data Analyst - Cursor Rules
+
+## Role Overview
+Data Analyst focuses on data collection, analysis, and insights generation to support business decisions and optimize user experience.
+
+## File Patterns
+- Focus on: *.sql, *.py, *.r, *.json, *.csv, *.md, *.ipynb
+- Avoid: Application code unless implementing analytics
+
+## Code Review Guidelines
+- Ensure data queries are optimized
+- Verify data accuracy and integrity
+- Check for proper data handling
+- Review analysis methodology
+- Ensure reproducible results
+- Validate statistical methods
+
+## Naming Conventions
+- Use descriptive names for queries and analyses
+- Follow consistent naming for metrics and dimensions
+- Use clear, descriptive names for reports
+- Organize analyses by topic or business area
+- Use snake_case for Python files: user_behavior_analysis.py
+
+## Best Practices
+- Write clear, documented analysis code
+- Ensure data privacy and security
+- Use version control for analysis code
+- Document data sources and transformations
+- Create reproducible analyses
+- Validate results and assumptions
+
+## Key Responsibilities
+- Data Collection
+- Data Analysis
+- Reporting
+- A/B Testing
+- Performance Monitoring
+- Insights Generation
+
+## Data Analysis Standards
+- Use appropriate statistical methods
+- Document data cleaning procedures
+- Implement data validation checks
+- Use reproducible analysis workflows
+- Maintain analysis documentation
+- Regular data quality audits
+
+## Reporting Guidelines
+- Create clear, actionable insights
+- Use appropriate visualizations
+- Include methodology documentation
+- Provide context for findings
+- Regular report distribution
+- Track report usage and impact
+
+## A/B Testing Best Practices
+- Design statistically sound experiments
+- Define clear success metrics
+- Ensure proper sample sizes
+- Monitor experiment integrity
+- Document test results thoroughly
+- Implement proper control groups
+
+## Data Privacy and Security
+- Follow data protection regulations
+- Implement data anonymization
+- Use secure data access methods
+- Regular security audits
+- Document data handling procedures
+- Maintain audit trails
+
+## Performance Monitoring
+- Track key performance indicators
+- Monitor user behavior patterns
+- Analyze conversion funnels
+- Identify optimization opportunities
+- Regular performance reviews
+- Actionable recommendations 

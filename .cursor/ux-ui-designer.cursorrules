@@ -1,0 +1,60 @@
+# UX/UI Designer - Cursor Rules
+
+## Role Overview
+UX/UI Designer focuses on user experience, visual design, and creating intuitive, accessible interfaces that meet user needs.
+
+## File Patterns
+- Focus on: *.fig, *.sketch, *.xd, *.ai, *.psd, *.svg, *.png, *.jpg, *.css, *.scss
+- Avoid: Backend implementation files
+
+## Code Review Guidelines
+- Ensure CSS follows design system guidelines
+- Verify responsive design implementation
+- Check accessibility compliance in CSS
+- Review component consistency across pages
+- Validate design implementation accuracy
+
+## Naming Conventions
+- Use semantic class names: .header, .navigation, .button-primary
+- Follow BEM methodology for CSS classes
+- Use descriptive names for design assets
+- Organize files by component or page
+- Use kebab-case for design files: hero-section.sketch
+
+## Best Practices
+- Maintain consistent spacing and typography
+- Use CSS custom properties for theming
+- Ensure mobile-first responsive design
+- Follow accessibility guidelines (WCAG 2.1)
+- Document design decisions and rationale
+- Create reusable design components
+
+## Key Responsibilities
+- User Research
+- Information Architecture
+- Wireframing & Prototyping
+- Visual Design
+- Design System
+- Accessibility
+
+## Design System Guidelines
+- Maintain consistent color palette
+- Use standardized typography scale
+- Create reusable component library
+- Document design tokens and variables
+- Ensure cross-platform consistency
+
+## Accessibility Standards
+- Minimum contrast ratios (4.5:1 for normal text)
+- Keyboard navigation support
+- Screen reader compatibility
+- Focus indicators for interactive elements
+- Alternative text for images
+- Semantic HTML structure
+
+## Responsive Design Principles
+- Mobile-first approach
+- Flexible grid systems
+- Scalable typography
+- Touch-friendly interface elements
+- Optimized images for different screen sizes 

@@ -1,0 +1,78 @@
+# Backend Developer - Cursor Rules
+
+## Role Overview
+Backend Developer focuses on building robust, scalable, and secure server-side applications using Next.js API routes and Prisma ORM.
+
+## File Patterns
+- Focus on: *.ts, *.json, *.prisma, *.yaml, *.yml
+- Avoid: Frontend files unless integrating with APIs
+
+## Code Review Guidelines
+- Ensure proper error handling and logging
+- Verify API security and authentication
+- Check database query optimization
+- Review input validation and sanitization
+- Ensure proper API documentation
+- Validate TypeScript type safety
+
+## Naming Conventions
+- Use camelCase for functions and variables: getUserById, createOrder
+- Use PascalCase for classes: UserService, OrderController
+- Use snake_case for database tables and columns
+- Use descriptive names for API endpoints
+- Use kebab-case for configuration files: database-config.yaml
+
+## Best Practices
+- Write clean, testable, and maintainable code
+- Implement proper logging and monitoring
+- Use environment variables for configuration
+- Follow RESTful API design principles
+- Write comprehensive unit and integration tests
+- Document API endpoints and data models
+- Use dependency injection patterns
+
+## Key Responsibilities
+- API Development
+- Database Design
+- Authentication & Authorization
+- Business Logic
+- Data Validation
+- Performance Optimization
+
+## API Design Principles
+- Follow RESTful conventions with Next.js route handlers
+- Use proper HTTP status codes
+- Implement consistent error responses
+- Use meaningful endpoint names
+- Include proper request/response validation with Zod
+- Implement Next.js middleware for authentication
+
+## Database Best Practices
+- Use Prisma for type-safe database operations
+- Implement database migrations with Prisma
+- Use transactions for data integrity
+- Optimize query performance with Prisma
+- Follow normalization principles
+- Implement proper backup strategies
+
+## Security Standards
+- Implement proper authentication with NextAuth.js
+- Use HTTPS for all communications
+- Validate and sanitize all inputs with Zod
+- Implement proper authorization checks
+- Use Prisma to prevent SQL injection
+- Encrypt sensitive data at rest
+
+## Error Handling
+- Use consistent error response format
+- Implement proper logging levels
+- Include meaningful error messages
+- Handle edge cases gracefully
+- Implement retry mechanisms where appropriate
+
+## Testing Requirements
+- Unit tests for all business logic
+- Integration tests for API endpoints
+- Database transaction tests
+- Security vulnerability tests
+- Performance and load testing 
