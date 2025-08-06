@@ -254,9 +254,9 @@ We maintain a workplace free from discrimination and harassment. Any form of har
 ### Progressive Discipline
 
 1. **Verbal Warning**: First offense or minor issues
-2. **Written Warning**: Repeated or more serious issues
-3. **Final Warning**: Continued policy violations
-4. **Termination**: Serious violations or continued issues
+1. **Written Warning**: Repeated or more serious issues
+1. **Final Warning**: Continued policy violations
+1. **Termination**: Serious violations or continued issues
 
 ### Grounds for Immediate Termination
 

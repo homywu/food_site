@@ -149,23 +149,23 @@ This guide provides a comprehensive framework for planning, developing, and mana
 ### Profitability Optimization
 
 1. **Cost Control**: Regular supplier price reviews
-2. **Portion Control**: Standardized serving sizes
-3. **Waste Reduction**: Inventory management
-4. **Efficiency**: Streamlined preparation methods
+1. **Portion Control**: Standardized serving sizes
+1. **Waste Reduction**: Inventory management
+1. **Efficiency**: Streamlined preparation methods
 
 ### Customer Satisfaction
 
 1. **Quality Consistency**: Standardized recipes
-2. **Presentation**: Visual appeal enhancement
-3. **Service Speed**: Preparation time optimization
-4. **Value Perception**: Price-to-value ratio
+1. **Presentation**: Visual appeal enhancement
+1. **Service Speed**: Preparation time optimization
+1. **Value Perception**: Price-to-value ratio
 
 ### Operational Efficiency
 
 1. **Kitchen Layout**: Workflow optimization
-2. **Staff Training**: Skill development
-3. **Equipment Utilization**: Capacity planning
-4. **Inventory Management**: Stock level optimization
+1. **Staff Training**: Skill development
+1. **Equipment Utilization**: Capacity planning
+1. **Inventory Management**: Stock level optimization
 
 ## 📋 Menu Planning Checklist
 
