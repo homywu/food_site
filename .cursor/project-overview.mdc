@@ -221,7 +221,11 @@ This project aims to create a comprehensive restaurant showcase and ordering por
 - **Customer Base**: 10,000+ registered customers
 
 This comprehensive overview provides the foundation for successful development while maintaining the role-based structure that ensures quality and consistency across all aspects of the project.
-description:
-globs:
-alwaysApply: false
----
+
+## Description
+
+## Globs
+
+## Always Apply
+
+False

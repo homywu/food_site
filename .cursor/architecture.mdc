@@ -342,7 +342,11 @@ spec:
 - **Testing**: Regular disaster recovery testing
 
 This architecture provides a solid foundation for building a scalable, secure, and high-performance restaurant showcase and ordering portal that can grow with user demands while maintaining code quality and system reliability.
-description:
-globs:
-alwaysApply: false
----
+
+## Description
+
+## Globs
+
+## Always Apply
+
+False

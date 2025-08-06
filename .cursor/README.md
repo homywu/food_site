@@ -4,7 +4,7 @@ This directory contains role-specific cursor rules for the Restaurant Showcase &
 
 ## File Structure
 
-```
+```markdown
 .cursor/
 ├── README.md                           # This file
 ├── project-overview.mdc                # Comprehensive project documentation
